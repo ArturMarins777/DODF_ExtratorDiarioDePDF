@@ -1,14 +1,12 @@
 # DODF_ExtratorDiarioDePDF
 
-Este projeto extrai automaticamente as páginas de interesse do Diário Oficial do Distrito Federal (DODF), com base em uma busca específica dentro dos arquivos PDF publicados. O script baixa o arquivo PDF do DODF para o dia atual e extrai até 3 páginas começando a partir da página onde o termo de busca é encontrado. Além disso, o PDF resultante é otimizado em tamanho utilizando a biblioteca `pikepdf`.
-
+Este projeto extrai automaticamente as páginas de interesse do Diário Oficial do Distrito Federal (DODF), com base em uma busca específica dentro dos arquivos PDF publicados. O script baixa o arquivo PDF do DODF para o dia atual e extrai até 3 páginas começando a partir da página onde o termo de busca é encontrado.
 ## Funcionalidades
 
 - Baixa automaticamente o PDF do DODF para o dia atual.
 - Busca por um termo específico no conteúdo do PDF.
 - Extrai até 3 páginas a partir da página onde o termo de busca é encontrado, podendo ser alterado na linha 43.
 - Salva um novo PDF contendo as páginas de interesse.
-- Otimiza o tamanho do PDF utilizando compressão com a biblioteca `pikepdf`.
 - Programado para rodar diariamente de segunda a sexta-feira às 9:00h.
 
 ## Requisitos 🔧
@@ -34,7 +32,7 @@ Este projeto extrai automaticamente as páginas de interesse do Diário Oficial 
 
 3. Instale as dependências:
    ```bash
-   pip install requests pandas pdfplumber PyPDF2 pikepdf schedule
+   pip install requests pandas pdfplumber PyPDF2 schedule
    pip install -r requirements.txt
 
 ## Personalização
