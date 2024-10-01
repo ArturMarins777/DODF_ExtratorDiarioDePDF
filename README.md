@@ -26,7 +26,7 @@ Este projeto extrai automaticamente as páginas de interesse do Diário Oficial 
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/DODF_ExtratorDiarioDePDF.git
+   git clone https://github.com/ArturMarins777/DODF_ExtratorDiarioDePDF.git
 
 2. Navegue até o diretório do projeto:
    ```bash
