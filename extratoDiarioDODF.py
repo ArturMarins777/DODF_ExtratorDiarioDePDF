@@ -52,7 +52,7 @@ def extrair_paginas_interesse(nome_arquivo):
 
 def executar_tarefa():
     data_atual = obter_data_atual()
-    caminho_arquivo_json = "/home/dabyss/Desktop/DODF/DATA/planilha.json"
+    caminho_arquivo_json = "Caminho/planilha.json"
     
     if not os.path.exists(caminho_arquivo_json):
         print(f"Arquivo {caminho_arquivo_json} não encontrado.")
