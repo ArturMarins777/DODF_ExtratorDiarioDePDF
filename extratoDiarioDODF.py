@@ -7,9 +7,8 @@ import pdfplumber
 from PyPDF2 import PdfReader, PdfWriter
 import schedule
 import time
-import pikepdf  # Adiciona a importação do pikepdf para otimização de tamanho de arquivo.
 
-# extratoDiarioDODF.py
+#extratoDiarioDODF.py
 
 def obter_data_atual():
     return datetime.now().strftime('%d-%m-%y')
@@ -48,18 +47,12 @@ def extrair_paginas_interesse(nome_arquivo):
         with open(nome_arquivo_otimizado, 'wb') as f:
             writer.write(f)
         print(f"PDF otimizado salvo como {nome_arquivo_otimizado}")
-
-        # Compressão do PDF usando pikepdf
-        with pikepdf.open(nome_arquivo_otimizado) as pdf:
-            pdf.save(nome_arquivo_otimizado, optimize_content=True)
-        print("PDF comprimido com sucesso.")
     else:
         print("Texto 'Gerência de contratações' não encontrado no PDF")
 
 def executar_tarefa():
     data_atual = obter_data_atual()
-    # Insira abaixo o caminho do arquivo "linksDODF.json"
-    caminho_arquivo_json = "/caminho/para/seu/arquivo/planilha.json"
+    caminho_arquivo_json = "/home/dabyss/Desktop/DODF/DATA/planilha.json"
     
     if not os.path.exists(caminho_arquivo_json):
         print(f"Arquivo {caminho_arquivo_json} não encontrado.")
