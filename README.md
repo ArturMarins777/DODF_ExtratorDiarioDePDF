@@ -18,7 +18,6 @@ Este projeto extrai automaticamente as páginas de interesse do Diário Oficial 
   - `pdfplumber` (https://pypi.org/project/pdfplumber/)
   - `PyPDF2` (https://pypi.org/project/PyPDF2/)
   - `schedule` (https://pypi.org/project/pikepdf/)
-  - `pikepdf` (https://pypi.org/project/schedule/)
 
 ### Instalação ⚙️
 
