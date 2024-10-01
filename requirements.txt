@@ -3,4 +3,3 @@ pandas
 pdfplumber
 PyPDF2
 schedule
-pikepdf
