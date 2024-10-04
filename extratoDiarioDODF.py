@@ -32,7 +32,7 @@ def extrair_paginas_interesse(nome_arquivo):
 
         for i in range(num_paginas):
             texto_pagina = pdf.pages[i].extract_text()
-            if texto_pagina and "Gerência de contratações" in texto_pagina:
+            if texto_pagina and "ATA DA REUNIÃO DA REDE DISTRITAL DE PROTEÇÃO À MULHER EM" in texto_pagina:
                 pagina_interesse = i
                 break
 
